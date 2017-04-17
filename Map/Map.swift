@@ -8,10 +8,10 @@ class Map {
         self.map = map
     }
     
-    func load(lat: CLLocationDegrees, lon: CLLocationDegrees, delta: CLLocationDegrees = 0.05){
+    func load(latitude: CLLocationDegrees, longitude: CLLocationDegrees, delta: CLLocationDegrees = 0.05){
         let span = MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta)
         
-        let coordinates: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: lat, longitude: lon)
+        let coordinates: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         
         let region: MKCoordinateRegion = MKCoordinateRegion(center: coordinates, span: span)
         
