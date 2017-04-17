@@ -1,15 +1,14 @@
-## Map Component 
+## Map and Annotation Components
 
 ### How to use:
 
+# Map
 Map(map).load(lat: latitude, lon: longitude, delta: 0.01)
 
-or
+# Annotation
 
-Map(map).removeAnnotation(lastAnnotation)
+### creating one
+lastAnnotation = Annotation(map).add(lat: latitude, lon: longitude, title: "New Point")
 
-or 
-
-lastAnnotation = Map(map).addAnnotation(lat: latitude, lon: longitude)
-
-
+### deleting one
+Annotation(map).remove(lastAnnotation)
