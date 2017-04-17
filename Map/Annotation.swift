@@ -8,9 +8,9 @@ class Annotation {
         self.map = map
     }
 
-    func add(latitudelat: CLLocationDegrees, longitude: CLLocationDegrees, title: String = "Point Marked") -> MKPointAnnotation{
+    func add(latitude: CLLocationDegrees, longitude: CLLocationDegrees, title: String = "Point Marked") -> MKPointAnnotation{
         let annotation = MKPointAnnotation()
-        
+
         annotation.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         annotation.title = title
         
