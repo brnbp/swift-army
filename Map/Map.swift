@@ -17,18 +17,4 @@ class Map {
         
         map.setRegion(region, animated: true)
     }
-    
-    func addAnnotation(lat: CLLocationDegrees, lon: CLLocationDegrees, title: String = "Point Marked") -> MKPointAnnotation{
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
-        annotation.title = title
-        
-        map.addAnnotation(annotation)
-        
-        return annotation
-    }
-    
-    func removeAnnotation(_ annotation: MKPointAnnotation) {
-        map.removeAnnotation(annotation)
-    }
 }
